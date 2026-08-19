@@ -21,4 +21,5 @@ public class Service {
         TmdbResponse response = objectMapper.readValue(apiClient.fetch(instruction), TmdbResponse.class);
         return response.results();
     }
+
 }
